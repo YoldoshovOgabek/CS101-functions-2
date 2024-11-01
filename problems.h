@@ -49,7 +49,8 @@ int decimalToBinary(int n, int place = 1) {
 
 // Problem 6
 //midValue
-int midValue(int a, int b, int c) {
+template <typename T>
+T midValue(T a, T b, T c) {
     if ((a >= b && a <= c) || (a <= b && a >= c)) {
         return a;
     } else if ((b >= a && b <= c) || (b <= a && b >= c)) {
